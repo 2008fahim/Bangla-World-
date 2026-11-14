@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bangla World — English to Bangla Dictionary | ইংরেজি শব্দের বাংলা অর্থ</title>
+<meta name="description" content="Bangla World — ইংরেজি শব্দের সঠিক বাংলা অর্থ, উচ্চারণ ও উদাহরণসহ সহজ English to Bangla Dictionary। প্রতিদিনের ৪০০+ শব্দ খুঁজুন।">
+<meta name="keywords" content="english to bangla, bangla dictionary, ইংরেজি শব্দের বাংলা অর্থ, english to bangla dictionary, bangla meaning, বাংলা অর্থ">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Bangla World">
+<meta name="theme-color" content="#059669">
+<link rel="canonical" href="https://banglaworld.vercel.app/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bangla World">
+<meta property="og:title" content="Bangla World — English to Bangla Dictionary">
+<meta property="og:description" content="ইংরেজি শব্দের সঠিক বাংলা অর্থ, উচ্চারণ ও উদাহরণ — সহজ ও দ্রুত Bangla Dictionary।">
+<meta property="og:url" content="https://banglaworld.vercel.app/">
+<meta property="og:locale" content="bn_BD">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bangla World — English to Bangla Dictionary">
+<meta name="twitter:description" content="ইংরেজি শব্দের সঠিক বাংলা অর্থ, উচ্চারণ ও উদাহরণসহ।">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Bangla World","alternateName":"Bangla World Dictionary","url":"https://banglaworld.vercel.app/","inLanguage":"bn","description":"English to Bangla Dictionary — ইংরেজি শব্দের বাংলা অর্থ, উচ্চারণ ও উদাহরণ।","publisher":{"@type":"Organization","name":"Bangla World","url":"https://banglaworld.vercel.app/"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://banglaworld.vercel.app/?word={search_term_string}"},"query-input":"required name=search_term_string"}}
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--green:#059669;--green2:#10b981;--green-bg:#ecfdf5;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--card:#fff;--bg:#f8fafc;--radius:16px}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans Bengali",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
+a{color:var(--green);text-decoration:none}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}
+.head{max-width:960px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.logo svg{width:40px;height:40px;border-radius:10px;display:block}
+.logo b{font-size:19px;line-height:1.1;display:block}
+.logo span{font-size:12px;color:var(--muted);display:block}
+.head input{flex:1;min-width:0;padding:10px 14px;border:1px solid var(--line);border-radius:999px;font-size:15px;outline:none;background:#f8fafc}
+.head input:focus{border-color:var(--green);background:#fff;box-shadow:0 0 0 3px var(--green-bg)}
+main{max-width:960px;margin:0 auto;padding:20px 16px 40px}
+.hero{text-align:center;padding:28px 12px 8px}
+.hero h1{font-size:32px;line-height:1.25;margin-bottom:8px}
+.hero h1 em{font-style:normal;color:var(--green)}
+.hero p{color:var(--muted);font-size:16px;max-width:620px;margin:0 auto 20px}
+.search-wrap{max-width:640px;margin:0 auto;position:relative}
+.search-wrap input{width:100%;padding:16px 52px 16px 20px;font-size:18px;border:2px solid var(--line);border-radius:999px;outline:none;background:#fff;box-shadow:0 6px 24px rgba(15,23,42,.07)}
+.search-wrap input:focus{border-color:var(--green)}
+.search-wrap button{position:absolute;right:6px;top:6px;bottom:6px;border:0;background:var(--green);color:#fff;border-radius:999px;padding:0 18px;font-size:15px;font-weight:700;cursor:pointer}
+.hint{font-size:13px;color:var(--muted);margin-top:10px}
+#results{max-width:640px;margin:14px auto 0;text-align:left}
+.result{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:8px;cursor:pointer}
+.result:hover{border-color:var(--green);box-shadow:0 4px 14px rgba(5,150,105,.12)}
+.result b{font-size:17px}
+.result span{color:var(--muted);font-size:15px}
+.result i{font-style:normal;font-size:12px;background:var(--green-bg);color:var(--green);padding:2px 8px;border-radius:999px;white-space:nowrap}
+#detail{display:none;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;margin:24px auto 0;max-width:720px;box-shadow:0 10px 30px rgba(15,23,42,.08)}
+#detail.show{display:block}
+#detail .word{font-size:34px;line-height:1.2}
+#detail .pron{color:var(--muted);font-size:16px;margin-top:4px}
+.badge{display:inline-block;background:var(--green-bg);color:var(--green);font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-top:10px;text-transform:capitalize}
+.meaning{font-size:28px;font-weight:800;color:var(--green);margin:14px 0 4px}
+.ex{margin-top:16px;background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.ex p:first-child{font-weight:600}
+.ex p:last-child{color:var(--muted)}
+.syn{margin-top:16px}
+.chip{display:inline-block;background:#f1f5f9;border:1px solid var(--line);border-radius:999px;padding:5px 12px;margin:4px 6px 0 0;font-size:14px;cursor:pointer}
+.chip:hover{border-color:var(--green);color:var(--green)}
+.actions{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 18px;font-size:15px;font-weight:700;cursor:pointer}
+.btn.primary{background:var(--green);border-color:var(--green);color:#fff}
+.btn:active{transform:scale(.97)}
+section{margin-top:36px}
+section h2{font-size:21px;margin-bottom:6px}
+section .sub{color:var(--muted);font-size:14px;margin-bottom:14px}
+.letters{display:flex;flex-wrap:wrap;gap:8px}
+.letters button{width:40px;height:40px;border-radius:10px;border:1px solid var(--line);background:#fff;font-size:15px;font-weight:700;cursor:pointer}
+.letters button.on,.cat.on{background:var(--green);color:#fff;border-color:var(--green)}
+.cats{display:flex;flex-wrap:wrap;gap:10px}
+.cat{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font-size:15px;cursor:pointer}
+.grid-note{font-size:13px;color:var(--muted);margin-top:12px}
+.seo{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-top:36px}
+.seo h2{font-size:19px;margin-bottom:10px}
+.seo p{color:#334155;margin-bottom:10px;font-size:15px}
+footer{text-align:center;color:var(--muted);font-size:13px;padding:28px 16px;border-top:1px solid var(--line);margin-top:36px}
+.empty{text-align:center;color:var(--muted);padding:18px}
+@media(max-width:600px){
+.hero h1{font-size:26px}
+.head{flex-wrap:wrap}
+.head input{flex:1 1 100%;order:3}
+#detail .word{font-size:28px}
+.meaning{font-size:24px}
+.search-wrap input{font-size:16px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="head">
+<a class="logo" href="/" aria-label="Bangla World — হোম">
+<svg viewBox="0 0 512 512" role="img" aria-label="Bangla World লোগো"><rect width="512" height="512" rx="112" fill="#059669"/><text x="256" y="330" font-family="sans-serif" font-size="220" font-weight="700" fill="#ffffff" text-anchor="middle">বা</text></svg>
+<span><b>Bangla World</b><span>ইংরেজি শব্দের বাংলা অর্থ</span></span>
+</a>
+<input id="topSearch" type="search" placeholder="শব্দ খুঁজুন… যেমন: love" aria-label="শব্দ খুঁজুন" autocomplete="off">
+</div>
+</header>
+<main>
+<div class="hero">
+<h1>ইংরেজি শব্দের <em>বাংলা অর্থ</em> খুঁজুন</h1>
+<p>English to Bangla Dictionary — সঠিক অর্থ, উচ্চারণ, উদাহরণ ও সমার্থক শব্দ — সব এক জায়গায়, একদম ফ্রি।</p>
+<div class="search-wrap">
+<input id="mainSearch" type="search" placeholder="English word লিখুন… যেমন: beautiful" aria-label="English word খুঁজুন" autocomplete="off">
+<button id="searchBtn" type="button">খুঁজুন</button>
+</div>
+<p class="hint">টাইপ করলেই সাথে সাথে ফলাফল আসবে • ৪০০+ সাধারণ শব্দ</p>
+<div id="results" aria-live="polite"></div>
+</div>
+
+<article id="detail" aria-live="polite"></article>
+
+<section aria-labelledby="pop-h">
+<h2 id="pop-h">জনপ্রিয় শব্দ</h2>
+<p class="sub">সবচেয়ে বেশি খোঁজা হয় এমন শব্দগুলো — এক ক্লিকে অর্থ দেখুন।</p>
+<div id="popular"></div>
+</section>
+
+<section aria-labelledby="az-h">
+<h2 id="az-h">A–Z দিয়ে খুঁজুন</h2>
+<p class="sub">অক্ষর বেছে নিলে সেই অক্ষর দিয়ে শুরু হওয়া শব্দগুলো দেখাবে।</p>
+<div class="letters" id="letters"></div>
+<div class="grid-note" id="letterNote"></div>
+</section>
+
+<section aria-labelledby="cat-h">
+<h2 id="cat-h">বিষয় অনুযায়ী শব্দ</h2>
+<p class="sub">দৈনন্দিন জীবন, পড়াশোনা, পরিবার, প্রকৃতি ও কাজ — বিষয় বেছে নিন।</p>
+<div class="cats" id="cats"></div>
+<div class="grid-note" id="catNote"></div>
+</section>
+
+<section aria-labelledby="recent-h">
+<h2 id="recent-h">সাম্প্রতিক খোঁজা শব্দ</h2>
+<p class="sub">আপনি আগে যে শব্দগুলো দেখেছেন, সেগুলো এখানে থাকবে।</p>
+<div id="recent"><p class="empty">এখনো কোনো শব্দ খোঁজা হয়নি।</p></div>
+</section>
+
+<div class="seo">
+<h2>Bangla World — English to Bangla Dictionary</h2>
+<p>Bangla World হলো একটি সহজ ও দ্রুত english to bangla dictionary। এখানে প্রতিদিনের ব্যবহৃত ইংরেজি শব্দের বাংলা অর্থ, সঠিক উচ্চারণ, উদাহরণ বাক্য ও সমার্থক শব্দ পাবেন। ছাত্র, শিক্ষক ও ইংরেজি শিখতে চাওয়া সবার জন্য এই সাইটটি তৈরি।</p>
+<p>কোনো শব্দ খুঁজতে উপরের সার্চ বক্সে ইংরেজি শব্দটি লিখুন — যেমন love, beautiful বা success। প্রতিটি শব্দের আলাদা পেজ আছে, তাই লিংকটি শেয়ার করলে বন্ধুরাও সরাসরি সেই শব্দের অর্থ দেখতে পারবে। নতুন শব্দ নিয়মিত যোগ করা হয়।</p>
+<p>আমাদের লক্ষ্য একটাই — ইংরেজি শব্দের বাংলা অর্থ যেন সবাই নিখুঁতভাবে ও সঠিকভাবে, সহজে ও দ্রুত খুঁজে পায়।</p>
+</div>
+</main>
+<footer>
+<p><strong>Bangla World</strong> — English to Bangla Dictionary • ইংরেজি শব্দের বাংলা অর্থ</p>
+<p>© 2026 Bangla World • banglaworld.vercel.app</p>
+</footer>
+<script src="/words.js"></script>
+<script>
+(function(){
+var WORDS = window.BW_WORDS || [];
+var byWord = {};
+WORDS.forEach(function(w){ byWord[w.w]=w; });
+var CATS = {daily:"দৈনন্দিন জীবন", study:"পড়াশোনা", family:"পরিবার", nature:"প্রকৃতি", work:"কাজ"};
+var POPULAR = ["love","beautiful","happy","success","friend","family","school","water","food","time","day","night","mother","father","book","teacher","student","house","tree","sun","moon","river","flower","bird"];
+var main=document.getElementById("mainSearch"), topS=document.getElementById("topSearch"),
+results=document.getElementById("results"), detail=document.getElementById("detail");
+function esc(s){return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function chip(w){return '<button class="chip" type="button" data-word="'+esc(w.w)+'">'+esc(w.w)+' — '+esc(w.bn)+'</button>'; }
+function renderList(list, emptyMsg){
+  if(!list.length){ results.innerHTML = '<p class="empty">'+esc(emptyMsg||"কোনো শব্দ পাওয়া যায়নি। বানান ঠিক আছে কি না দেখুন।")+'</p>'; return; }
+  results.innerHTML = list.slice(0,30).map(function(w){
+    return '<div class="result" role="button" tabindex="0" data-word="'+esc(w.w)+'"><span><b>'+esc(w.w)+'</b> · '+esc(w.bn)+'</span><i>'+esc(w.pos)+'</i></div>';
+  }).join("");
+}
+function search(q){
+  q=(q||"").trim().toLowerCase();
+  if(q.length<1){ results.innerHTML=""; return; }
+  var starts=WORDS.filter(function(w){return w.w.indexOf(q)===0;});
+  var contains=WORDS.filter(function(w){return w.w.indexOf(q)>0 || w.bn.indexOf(q)>=0;});
+  var exact=byWord[q];
+  var list=[];
+  if(exact) list.push(exact);
+  starts.concat(contains).forEach(function(w){ if(list.indexOf(w)<0) list.push(w); });
+  renderList(list);
+}
+function openWord(word, push){
+  var w = byWord[(word||"").toLowerCase()];
+  if(!w) return;
+  detail.classList.add("show");
+  detail.innerHTML =
+   '<div class="word">'+esc(w.w)+'</div>'+
+   '<div class="pron">উচ্চারণ: '+esc(w.pr)+' • '+esc(w.pos)+'</div>'+
+   '<span class="badge">'+esc(w.pos)+' • '+esc(CATS[w.cat]||w.cat)+'</span>'+
+   '<div class="meaning">'+esc(w.bn)+'</div>'+
+   '<div class="ex"><p>'+esc(w.ex)+'</p><p>'+esc(w.exb)+'</p></div>'+
+   '<div class="syn"><strong>সমার্থক শব্দ:</strong><br>'+ w.syn.map(function(s){return '<button class="chip" type="button" data-word="'+esc(s.toLowerCase())+'">'+esc(s)+'</button>';}).join("") +'</div>'+
+   '<div class="actions"><button class="btn primary" id="copyBtn" type="button">অর্থ কপি করুন</button><button class="btn" id="shareBtn" type="button">লিংক শেয়ার করুন</button></div>';
+  document.title = w.w + " অর্থ in Bengali — " + w.bn + " | Bangla World";
+  if(push!==false){
+    var url="/?word="+encodeURIComponent(w.w);
+    try{ history.pushState({word:w.w},"",url); }catch(e){}
+  }
+  addRecent(w.w);
+  detail.scrollIntoView({behavior:"smooth",block:"start"});
+  var cb=document.getElementById("copyBtn");
+  if(cb) cb.onclick=function(){
+    var t=w.w+" — "+w.bn;
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){cb.textContent="কপি হয়েছে ✓";});}
+    else{cb.textContent=t;}
+  };
+  var sb=document.getElementById("shareBtn");
+  if(sb) sb.onclick=function(){
+    var link="https://banglaworld.vercel.app/?word="+encodeURIComponent(w.w);
+    if(navigator.share){navigator.share({title:w.w+" অর্থ — Bangla World",text:w.w+" — "+w.bn,url:link}).catch(function(){});}
+    else if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(link).then(function(){sb.textContent="লিংক কপি হয়েছে ✓";});}
+    else{sb.textContent=link;}
+  };
+}
+function addRecent(word){
+  try{
+    var r=JSON.parse(localStorage.getItem("bw_recent")||"[]");
+    r=[word].concat(r.filter(function(x){return x!==word;})).slice(0,8);
+    localStorage.setItem("bw_recent",JSON.stringify(r));
+    renderRecent();
+  }catch(e){}
+}
+function renderRecent(){
+  var el=document.getElementById("recent");
+  try{
+    var r=JSON.parse(localStorage.getItem("bw_recent")||"[]").filter(function(x){return byWord[x];});
+    if(!r.length){ el.innerHTML='<p class="empty">এখনো কোনো শব্দ খোঁজা হয়নি।</p>'; return; }
+    el.innerHTML=r.map(function(x){return chip(byWord[x]);}).join("");
+  }catch(e){ el.innerHTML=""; }
+}
+function bindInput(inp){
+  inp.addEventListener("input",function(){ search(inp.value); if(inp===main) topS.value=inp.value; if(inp===topS) main.value=inp.value; });
+  inp.addEventListener("keydown",function(e){ if(e.key==="Enter"){ var q=inp.value.trim().toLowerCase(); if(byWord[q]) openWord(q); else { search(q); var f=WORDS.filter(function(w){return w.w.indexOf(q)===0;}); if(f[0]) openWord(f[0].w);} }});
+}
+bindInput(main); bindInput(topS);
+document.getElementById("searchBtn").addEventListener("click",function(){ var q=main.value.trim().toLowerCase(); if(byWord[q]) openWord(q); else search(q); });
+document.addEventListener("click",function(e){
+  var t=e.target.closest("[data-word]");
+  if(t){ openWord(t.getAttribute("data-word")); return; }
+  var r=e.target.closest(".result");
+  if(r) openWord(r.getAttribute("data-word"));
+});
+document.getElementById("popular").innerHTML = POPULAR.filter(function(x){return byWord[x];}).map(function(x){return chip(byWord[x]);}).join("");
+var lettersEl=document.getElementById("letters");
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach(function(L){
+  var b=document.createElement("button"); b.type="button"; b.textContent=L;
+  b.onclick=function(){
+    lettersEl.querySelectorAll("button").forEach(function(x){x.classList.remove("on");}); b.classList.add("on");
+    var list=WORDS.filter(function(w){return w.w.charAt(0)===L.toLowerCase();});
+    document.getElementById("letterNote").textContent = L+" দিয়ে শুরু: "+list.length+"টি শব্দ";
+    renderList(list,"এই অক্ষরে কোনো শব্দ নেই।");
+    results.scrollIntoView({behavior:"smooth"});
+  };
+  lettersEl.appendChild(b);
+});
+var catsEl=document.getElementById("cats");
+Object.keys(CATS).forEach(function(k){
+  var b=document.createElement("button"); b.type="button"; b.className="cat"; b.textContent=CATS[k];
+  b.onclick=function(){
+    catsEl.querySelectorAll(".cat").forEach(function(x){x.classList.remove("on");}); b.classList.add("on");
+    var list=WORDS.filter(function(w){return w.cat===k;});
+    document.getElementById("catNote").textContent = CATS[k]+": "+list.length+"টি শব্দ";
+    renderList(list);
+    results.scrollIntoView({behavior:"smooth"});
+  };
+  catsEl.appendChild(b);
+});
+renderRecent();
+window.addEventListener("popstate",function(e){
+  var q=new URLSearchParams(location.search).get("word");
+  if(q&&byWord[q.toLowerCase()]) openWord(q,false);
+});
+var init=new URLSearchParams(location.search).get("word");
+if(init&&byWord[init.toLowerCase()]){ main.value=init; openWord(init,false); }
+})();
+</script>
+</body>
+</html>
